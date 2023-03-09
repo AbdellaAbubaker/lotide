@@ -7,7 +7,6 @@ const assertEqual = function (actual, expected) {
     }
 
 
-
 };
 
 // TEST CODE
@@ -27,8 +26,6 @@ const countLetters = function () {
         if (output[letter])
             output[letter]++;
         else output[letter] = 1
-
-
 
     }
     return output

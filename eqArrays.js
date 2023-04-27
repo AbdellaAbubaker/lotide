@@ -3,7 +3,7 @@
 // 3. If the arguements doesnt return array, return false/error 
 // 4. If the are two arrays and the length are not the same, return false 
 // 5. Start looping the first array and use the same index to check the item in the second array 
-
+const assertEqual = require('./assertEqual')
 const eqArrays = function (arr0, arr1) {
 
     if (arr0.length === 0 || arr1.lgenth === 0) {
@@ -25,16 +25,8 @@ const eqArrays = function (arr0, arr1) {
 }
 
 // TEST CODE
-const assertEqual = function (actual, expected) {
 
-    if (actual === expected) {
-        console.log("Assertion passed: actual === expected")
-    } else {
-        console.log("Assertion passed: actual !== expected")
-    }
-
-};
-
+module.exports = assertEqual;
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), false);
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true);
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3", "9"]), false);

@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@lighthousehouse101/lotide",
   "version": "1.0.0",
   "description": "",
-  "main": "assertEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/AbdellaAbubaker/lotide.git"
   },
-  "author": "Abdella Abubaker",
+  "author": "lighthousehouse101",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AbdellaAbubaker/lotide/issues"

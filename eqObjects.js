@@ -1,25 +1,4 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function (actual, expected) {
-    if (actual === expected) {
-        console.log("Assertion passed: actual === expected")
-    } else {
-        console.log("Assertion failed: actual !== expected")
-    }
-};
-
-
-const eqArrays = function (actual, expected) {
-    let check = true;
-    for (let i = 0; i < actual.length; i++) {
-        if (actual[i] !== expected[i]) {
-            check = false;
-        }
-        if (actual.length !== expected.length) {
-            check = false;
-        }
-    }
-    return check;
-}
 
 const eqObjects = function (object1, object2) {
         //    1. Find if the obejcts are equal in length by making the object in array 
@@ -52,31 +31,33 @@ const eqObjects = function (object1, object2) {
         }
 }
 
+module.exports = eqObjects
+
         // Test case 
 
-        const shirtObject = {
-            color: "red",
-            size: "medium"
-        };
-        const anotherShirtObject = {
-            size: "medium",
-            color: "red"
-        };
-        assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
+        // const shirtObject = {
+        //     color: "red",
+        //     size: "medium"
+        // };
+        // const anotherShirtObject = {
+        //     size: "medium",
+        //     color: "red"
+        // };
+        // assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
 
 
-        const longSleeveShirtObject = {
-            size: "medium",
-            color: "red",
-            sleeveLength: "long"
-        };
-        assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false)
+        // const longSleeveShirtObject = {
+        //     size: "medium",
+        //     color: "red",
+        //     sleeveLength: "long"
+        // };
+        // assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false)
 
 
-        const colorBrandObject = {
-            size: "medium",
-            color: "red",
-            sleeveLength: "long",
-            brand: "Canada Goose"
-        };
-        assertEqual(eqObjects(shirtObject, colorBrandObject), undefined);
+        // const colorBrandObject = {
+        //     size: "medium",
+        //     color: "red",
+        //     sleeveLength: "long",
+        //     brand: "Canada Goose"
+        // };
+        // assertEqual(eqObjects(shirtObject, colorBrandObject), undefined);

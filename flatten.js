@@ -13,3 +13,6 @@ const flatten = function(array) {
 const inputArray = [1, 2, [3, 4], 5, [6]];
 const outputArray = flatten(inputArray);
 console.log(outputArray);
+
+
+module.exports = flatten

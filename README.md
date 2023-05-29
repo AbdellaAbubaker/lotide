@@ -37,5 +37,6 @@ The following functions are currently implemented:
 * `findKeyByValue` : Iterates each key, the function has two arguments values and keys and compares the value 
 `letterPositions` : Takes input as a string 
 * `flatten`: Takes a nested array as an argument and returns a new array by creating one single array
+* `without`: Takes two arguements that are arrays and loops through one array to see if an element can be found in the other. If a matching element is not found in both array, the elememt will be put into a new array.
 
 

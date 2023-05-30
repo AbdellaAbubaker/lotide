@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test":  "mocha"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "mocha": "^9.2.2"
+  },
+  "dependencies": {
+    "@lighthousehouse101/lotide": "^1.0.0"
   }
 }

@@ -5,9 +5,6 @@ const assertEqual = function(actual, expected) {
     } else {
         console.log("Assertion passed: actual !== expected")
     }
-
-   
-
 };
 
 

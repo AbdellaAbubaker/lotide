@@ -6,7 +6,7 @@
 const assertEqual = require('./assertEqual')
 const eqArrays = function (arr0, arr1) {
 
-    if (arr0.length === 0 || arr1.lgenth === 0) {
+    if (arr0.length === 0 || arr1.length === 0) {
         return false
     }
     if (arr0.length !== arr1.length) {
@@ -26,9 +26,9 @@ const eqArrays = function (arr0, arr1) {
 
 // TEST CODE
 
-module.exports = assertEqual;
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), false);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3", "9"]), false);
-assertEqual(eqArrays([], []), false);
-assertEqual(eqArrays([], ["1"]), false);
+module.exports = eqArrays;
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), false);
+// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true);
+// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3", "9"]), false);
+// assertEqual(eqArrays([], []), false);
+// assertEqual(eqArrays([], ["1"]), false);

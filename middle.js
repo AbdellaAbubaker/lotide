@@ -10,8 +10,8 @@ const middle = (arr) => {
     return midElement
   }
 
-  if (arr.length % 2 === 1) {
-    midElement.push(arr[arr.length / 2 - 1], arr[arr.length / 2])
+  if (arr.length % 2 !== 0) {
+    midElement.push(arr[Math.floor(arr.length / 2)])
   } else {
     midElement.push(arr[arr.length / 2 - 1], arr[arr.length / 2])
   }

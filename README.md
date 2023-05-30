@@ -12,7 +12,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @AbdellaAbubaker/lotide`
+`npm install @lighthousehouse101/lotide`
 
 **Require it:**
 
@@ -37,6 +37,18 @@ The following functions are currently implemented:
 * `findKeyByValue` : Iterates each key, the function has two arguments values and keys and compares the value 
 `letterPositions` : Takes input as a string 
 * `flatten`: Takes a nested array as an argument and returns a new array by creating one single array
-* `without`: Takes two arguements that are arrays and loops through one array to see if an element can be found in the other. If a matching element is not found in both array, the elememt will be put into a new array.
+* `Map`: Takes in an Array and callback as arguments. A new empty Array is made. A for of loop is used to iterate through the array that was given as an argument and is then pushed into the new Array.
+* `Count letters`: Loops through a string which tallies how many times each letter is repeated 
+* ` CountOnly` : Takes in one Array called allItems and an Object called itemsToCount. Loops through the object to see how many items match within the allItems array. 
+* `assertArraysEqual`: Using two arrays, checks to see if the two arrays are equal. If they aren't equal, a message saying failed will appear and if it passees a message saying pass is sent.
+* `assertObjectsEqual`: Checks to see if two objects have the same keys, values and length. The function also checks if there are arrays within the objects and also checks if they are the same length
+* `Flatten`: Takes an nested array as a callback and returns a new array and remove any nested array and returns the array as one singular array. 
+
+
+
+
+
+
+
 
 

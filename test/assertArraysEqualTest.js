@@ -1,4 +1,4 @@
-const assertArraysEqual = require('../assertArraysEqual')
+const assertArraysEqual = require('../assertArraysEquals')
 const assert = require('chai').assert;
 
 

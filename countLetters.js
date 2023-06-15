@@ -15,8 +15,8 @@ assertEqual(1, 1);
 
 
 
-const countLetters = function () {
-    const str = ""
+const countLetters = function (str) {
+
     const output = {}
 
     for (const letter of str) {
